@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AMD</title>
+  <meta name="description" content="Poèmes — AMD" />
+  <!-- Belle écriture type livre -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root { --bg:#000; --text:#fff; --muted: rgba(255,255,255,.75); --line: rgba(255,255,255,.16); }
+    * { box-sizing:border-box; }
+    body{
+      margin:0; background:var(--bg); color:var(--text);
+      font-family:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+      min-height:100svh; display:flex; align-items:center; justify-content:center;
+      padding:24px;
+    }
+    .wrap{ width:min(820px, 100%); text-align:center; }
+    .name{ letter-spacing:.25em; font-size:14px; color:var(--muted); margin-bottom:18px; }
+    h1{ margin:0 0 18px; font-weight:600; font-size:clamp(28px, 5vw, 52px); line-height:1.12; }
+    .divider{ width:min(220px, 60%); height:1px; background:var(--line); margin:22px auto; }
+    .btn{
+      display:inline-block; text-decoration:none; color:var(--text);
+      border:1px solid var(--line); border-radius:999px;
+      padding:12px 18px; font-size:18px;
+      transition: transform .08s ease, border-color .2s ease;
+    }
+    .btn:hover{ transform: translateY(-1px); border-color: rgba(255,255,255,.35); }
+    .sub{ margin-top:16px; color:var(--muted); font-size:16px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="name">AMD</div>
+
+    <h1>la ou la pensée fait tombé le masque</h1>
+
+    <div class="divider"></div>
+
+    <a class="btn" href="poemes.html">Accéder aux poèmes</a>
+
+    <div class="sub">© <span id="y"></span> AMD</div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
