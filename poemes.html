@@ -1,55 +1,107 @@
-<!DOCTYPE html>
-<!-- saved from url=(0052)file:///C:/Users/adam/OneDrive/Documents/poemes.html -->
-<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Poèmes — AMD</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com/">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link href="./poemes_files/css2" rel="stylesheet">
-
   <style>
-    :root { --bg:#000; --text:#fff; --muted:rgba(255,255,255,.72); --line:rgba(255,255,255,.18); }
-    *{ box-sizing:border-box; }
+    :root {
+      --bg:#000;
+      --text:#fff;
+      --muted:rgba(255,255,255,.7);
+      --line:rgba(255,255,255,.18);
+    }
+
+    /* POLICE UNIQUE PARTOUT */
+    *{
+      box-sizing:border-box;
+      font-family:"Century Schoolbook","Century",Georgia,"Times New Roman",serif;
+    }
+
     body{
-      margin:0; background:var(--bg); color:var(--text);
-      font-family:"Cormorant Garamond", Georgia, "Times New Roman", serif;
-      padding:28px 18px 70px;
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      padding:32px 20px 80px;
     }
-    .wrap{ width:min(860px, 100%); margin:0 auto; }
+
+    .wrap{
+      width:min(860px, 100%);
+      margin:0 auto;
+    }
+
     header{
-      display:flex; align-items:baseline; justify-content:space-between;
-      gap:14px; flex-wrap:wrap; margin:0 0 16px;
+      display:flex;
+      justify-content:space-between;
+      align-items:baseline;
+      margin-bottom:40px;
+      flex-wrap:wrap;
+      gap:12px;
     }
-    h1{ margin:0; font-weight:600; font-size:34px; }
-    a{
-      color:var(--text); text-decoration:none;
-      border-bottom:1px solid var(--line); padding-bottom:2px;
-    }
-    .poem{
-      border-top:1px solid var(--line);
-      padding:18px 0 22px;
-    }
-    .title{
-      font-size:18px; color:var(--muted);
-      margin:0 0 10px;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+
+    h1{
+      margin:0;
+      font-size:34px;
+      font-weight:400;
       letter-spacing:.02em;
     }
+
+    a{
+      color:var(--text);
+      text-decoration:none;
+      border-bottom:1px solid var(--line);
+      padding-bottom:2px;
+      font-size:15px;
+    }
+
+    /* ===== POÈMES ===== */
+
+    .poem{
+      margin:80px 0;              /* espace entre poèmes */
+      padding-top:32px;
+      border-top:1px solid var(--line);
+    }
+
+    .title{
+      font-size:18px;
+      color:var(--muted);
+      margin-bottom:24px;
+      letter-spacing:.04em;
+    }
+
     pre{
       margin:0;
-      white-space:pre-wrap;      /* respecte tes retours à la ligne */
-      font-size:20px;
-      line-height:1.75;
+      white-space:pre-wrap;
+      font-size:20px;             /* taille desktop */
+      line-height:1.8;
     }
+
     .end{
-      margin-top:26px; color:var(--muted);
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      margin-top:100px;
+      color:var(--muted);
       font-size:13px;
+      text-align:center;
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 600px){
+      pre{
+        font-size:16px;           /* poèmes plus petits sur mobile */
+        line-height:1.7;
+      }
+
+      .title{
+        font-size:15px;
+      }
+
+      h1{
+        font-size:26px;
+      }
     }
   </style>
-<style type="text/css" id="operaUserStyle"></style></head>
+</head>
+
 <body>
   <div class="wrap">
     <header>
@@ -73,12 +125,7 @@ Blanc, Blanc comme ces faces qu’elle m’ehxibe,
 Cette longueur coquette qui peut paraître si banale
 Mais qui se reflète tant dans mes yeux inhabiles
 
-Infernale, comme un passage au confessionnal.
-
-
-
-
-</pre>
+Infernale, comme un passage au confessionnal.</pre>
     </section>
 
     <section class="poem">
@@ -94,11 +141,7 @@ de rouge, celles qu’on offre pour dire “aime-moi”
 Un geste simple qui veut dire tant.
 
 Le Temps, c’est ce qui nous manque,
-pour se retrouver Toi et Moi
-
-
-
-</pre>
+pour se retrouver Toi et Moi</pre>
     </section>
 
     <section class="poem">
@@ -119,11 +162,7 @@ d’accepter, de le laisser s’en aller, s’envoler.
 Ce départ ne doit pas être oublié mais accepté.
 
 Daigner laisser la vie subsister, se poursuivre
-en laissant en vous cette trace de ce passé.
-
-
-
-</pre>
+en laissant en vous cette trace de ce passé.</pre>
     </section>
 
     <section class="poem">
@@ -144,11 +183,7 @@ Les miens sont bleus, et loin de cette
 chaleur qui mène à l’erreur.
 
 Même si ma couleur préférée est le rouge,
-mon bleu la couve.
-
-
-
-</pre>
+mon bleu la couve.</pre>
     </section>
 
     <section class="poem">
@@ -174,19 +209,14 @@ Le rouge jaillit en moi a mesure du
 Temps.
 C’est la haine qui réchauffe mon coeur,
 celui qui bat jusqu’à tout,
-Rompre.
-
-
-
-</pre>
+Rompre.</pre>
     </section>
 
-    <div class="end">© <span id="y">2025</span> AMD</div>
+    <div class="end">© <span id="y"></span> AMD</div>
   </div>
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
-
-
-</body></html>
+</body>
+</html>
